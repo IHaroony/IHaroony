@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medium.com</title>
+    <link rel="stylesheet" href="Style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+
+
+</head>
+<body>
+
+
+
+
+<nav>
+    <div class="nav">
+        <a href="#"><img src="Logo.PNG" alt="Logo"></a>
+        <ol class="nav-links">
+            <a href="Our Story.html">Our Story</a>
+            <a href="Membership.html">Membership</a>
+            <a href="Write.html">Write</a>
+            <a href="Sign in.html">Sign In</a>
+            <a href="Get Started.html"class="highlight"><i >Get started</a> 
+        </ol>
+    </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+<header>
+    <h1>Be part of a better internet.<span class="highlight1">Get 20% off membership for a limited time</span></h1>
+</header>
+
+
+
+
+
+
+
+<section>
+    <h3>Human <br>stories &amp; ideas</h3>
+    <a class="highlight5"> A place to read, write and deepen your understanding</a>
+    <div class="nav1">
+    <a href="Get Started.html"></a> Start reading</a>
+    </div>
+</section>
+
+
+
+
+
+
+
+<footer>
+
+    <footer>
+
+        <nav class="nav"> 
+        
+        <a href="Help.html">Help</a>
+        <a href="staus.html">Status</a>
+        <a href="about.html">About</a>
+        <a href="careers.html">Careers</a>
+        <a href="Press.html">Press</a>
+        <a href="Blog.html">Blog</a>
+        <a href="Privacy.html">Privacy</a>
+        <a href="Terms.html">Terms</a>
+        <a href="Text to speech.html">Text to speech</a>
+        <a href="Teams.html">Teams</a>
+        
+        
+        </nav>
+
+
+
+
+
+</footer>
+
+</body>
+</html>
+
+
+
+
+
+
+
+// css //
+
+
+
+body {
+    box-sizing: border-box;
+    background-image: url(aqw.jpg);
+    margin: 0;
+    padding: 0;
+    text-rendering: optimizeLegibility;
+   -webkit-font-smoothing: antialiased;
+        
+}
+
+/* navigation Styling */
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    background-color: #f7f4ed;
+    font-weight: lighter;
+
+}
+
+.nav .logo img {
+
+    width: 100px; 
+
+}
+
+
+
+.nav .nav-links {
+    list-style: none;
+    display: flex;
+    margin-left: 605px;
+    gap: 16px;
+    margin-top: 23px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nav .nav-links li {
+    margin: 0;
+}
+
+.nav .nav-links a {
+    text-decoration: none;
+    color: rgb(54, 51, 51);
+    font-size: 15px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    
+}
+
+.nav .nav-links .highlight {
+    background-color: #000;
+    color: #fff;
+    border-radius: 20px;
+    padding: 10px 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+header {
+    margin-top: -10px; /* Move the bar up by 10px */
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    color: rgb(66, 66, 66);
+    font-family: 'medium-content-sans-serif-font', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: linear-gradient( to right, #faeba2,#faeba2,#faeba2,#faeba2,#faeba2,#faeba2,#faeba2,#faeba2,#fee54b, #fee54b, #ffcc1a, #ffa90e,#ffa90e , #ffa90e);
+    padding: 14px;
+    border: 0.1px solid #242424;
+    font-style: normal;
+    
+}
+
+.highlight1 {
+    color: #000000;
+    text-decoration: underline;
+    font-family: 'medium-content-sans-serif-font', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: lighter;
+    font-style: normal; /* Ensure no italic styling */
+    margin-left: 10px; /* Add some space */
+}
+
+@font-face {
+    font-family: 'Sohne';
+    src: url('https://your-font-url/Sohne.woff2') format('woff2');
+    font-style: normal; /* Ensure no italic styling */
+}
+
+h3 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 330px;
+    margin-left: 690px;
+    color: rgba(0, 0, 0, 0.8);
+    font-family: 'medium-content-sans-serif-font', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    font-size: 90px;
+   text-rendering: optimizeLegibility;
+   -webkit-font-smoothing: antialiased;
+        
+}
+
+a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: large;
+}
+
+
+
+    .nav1 {
+        display: flex
+        justify-content: center;
+        align-items: center;
+        margin: 0px auto; 
+        width: fit-content; 
+        background-color: #000;
+        color: #fff;
+        border-radius: 40px;
+        padding: 11px 45px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-style: normal;
+        font-size: 20px;
+        margin-left: 690px;
+        margin-top: 50px;
+        
+        
+    }
+    
+    
+
+    .nav1 a {
+        display: flex;
+        text-decoration: none;
+        font-weight: lighter;
+        background-color: #000;
+        color: #fff;
+        text-rendering: optimizeLegibility;
+   -webkit-font-smoothing: antialiased;
+        
+        
+    }
+    
+
+    .highlight5{
+display: flex;
+justify-content: center;
+align-items: center;
+   color: #000000;
+   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+   font-style: normal;
+   margin-right:620px;
+   margin-top: -50px;
+   font-size: 25px ;
+
+
+
+
+
+
+    }
+    
+
+
+
+
+
+
+
+
+
+
+/* footer nav bar */
+footer { 
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    width: 100%;
+    padding: 5.7px;
+    justify-content: center;
+    background-color: #f7f4ed;
+    border-top: 1px solid #000000;
+    font-size: larger;
+}
+
+footer .nav {
+    display: flex;
+    gap: 2.5px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-right: 145px;
+    margin-top: 12px;
+    margin-bottom: 13px;
+}
+
+footer .nav a {
+    text-decoration: none;
+    font-family: 'medium-content-sans-serif-font', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    color: #333;
+    font-size: 13px;
+    transition: color 0.3s;
+    flex: 1 1 auto; 
+    text-align: center; 
+    padding: 7px; 
+}
+
+footer .nav a:hover {
+    color: #000;
+}
+
+@media (max-width: 600px) {
+   
+
+    .cta-button {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer .nav {
+        position: fixed;
+        flex-direction:row;
+        
+    }
+
+
+}
+
+
+
+
+
+
+
+
+
+  
+
+
+  
