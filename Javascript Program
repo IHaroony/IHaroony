@@ -1,0 +1,83 @@
+// Calcualtor Program made by using javascript//
+
+
+const prompt = require('prompt-sync')();
+// This code is important as it allows to basically run our code without it wouldnt work //
+
+
+console.log("Welcome!"); 
+// a greeting  Message//
+
+
+let repeat = true;
+// set the conditions to repeat the code 
+
+while (repeat) {
+// while looping its telling to repeat the program//
+
+
+const operator = prompt("Which operator would you like to use (+, -, /, *): ");
+// Prompting the user of operator he can use //
+
+
+const askForFirstNum = prompt("Please enter your first number: ");
+const firstNumber = Number(askForFirstNum); 
+// Asking the user to enter first number /( we set the name askForNumber as our naming variable and use when type second code of line)//
+
+
+const askForSecondNum = prompt("Please enter your second number: ");
+const secondNumber = Number(askForSecondNum); 
+// Asking the user to enter second number //
+
+
+let result;
+//  let result to start our calculations that we asked user before //
+
+
+
+if (operator === '+') {
+    result = firstNumber + secondNumber;
+    // This is an addition operator, we do strong equal and second line we use variables in this case were adding them //
+
+
+} else if (operator === '-') {
+    result = firstNumber - secondNumber;
+    // This is an minus operator, we do strong equal and in the second line use both our variabnbles for the outcome, minus them//
+
+
+
+} else if (operator === '/') {
+    if (secondNumber === 0) {
+        console.log("Sorry, division by zero is not allowed.");
+    } else {
+        result = firstNumber / secondNumber;
+    // This is an divide operator, we do strong equal and in the second line use both our variabnbles for the outcome, divide them//
+    // we cant divide by zero so we input this code to provide anm error message //
+
+
+    }
+} else if (operator === '*') {
+    result = firstNumber * secondNumber;
+     // This is an multiply operator, we do strong equal and in the second line use both our variabnbles for the outcome, multiply them//
+
+
+} else {
+    console.log("Error: Please use a valid operator (+, -, *, /).");
+    // if user input a unrecognised operator or anything not in line it will display error message
+}
+
+if (result !== undefined) {
+    console.log(`The result is: ${result}`);
+    // the code allows to shows the result for all the calculations //
+}
+
+
+
+const response = prompt("Would you like to try using it again (yes/no)")
+if (response !== 
+    "yes") {
+    repeat = false;
+    // This code is for our loop so if the user wants to try using calculator again he can //
+    // the user can yes/no, it will restart or present the ending//
+
+}
