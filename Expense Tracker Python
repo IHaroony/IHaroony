@@ -1,0 +1,144 @@
+// Exppense Tracker created uysing python //
+
+
+import time # time delays
+
+
+def greeting_messages():
+    print(" ::::: Hello :::::")
+    time.sleep(2)
+    print(" Welcome to your Expense Tracker!" )
+    time.sleep(2.5)
+    
+greeting_messages()
+
+#
+#! One Example
+
+# Using checks to ensure all information is entered
+# this code for action stuff in the code example
+
+# expenses = []
+
+#def add_expense(amount=None,category=None,date=None,quantity=None):
+#   if amount is None or category is None or date is None or quantity is None:
+#     print("Please make sure you fill everything.")
+
+#    else:
+
+#       expense = {'amount':amount,'category': category, 'date':date, 'quantity': quantity }
+#        print("Expenses added,expense")
+    
+    
+
+#add_expense(50, 'Food', '2024-1-1','two')
+
+#
+# Initialize an empty list to store expenses
+
+expenses = []
+
+def add_expense():
+    try:
+        # Input for expense details
+        amount = float(input("Enter the amount: "))
+        if amount <= 0:
+            print("Please Enter a Valid Number. ")
+            return
+        
+        category = input("Enter the category (e.g., Food, Transport, Entertainment): ").strip()
+        if not category:
+            print("This cannot be empty.")
+            return
+        
+        date = input("Enter the date (DD/MM/11YYYY): ").strip()
+        if not date:
+            print("This cannot be empty.")
+            return
+        
+        quantity = float(input("Enter the quantity: "))
+        if quantity <= 0:
+            print(" Please enter a number.")
+            return
+        
+
+        # Add the expense to the list
+
+        expense = {'amount': amount, 'category': category, 'date': date, 'quantity': quantity}
+        expenses.append(expense)
+        print("You're Expense has been added successfully.")
+    
+    except ValueError:
+        print("Invalid input. Please enter numbers for amount and quantity.")
+#
+
+
+def show_total_spent():
+    total = sum(expense['amount'] * expense['quantity'] for expense in expenses)
+    print(f"Total amount spent: ${total:.2f}")
+
+#
+
+def show_total_by_category():
+    category_totals = {}
+    for expense in expenses:
+        category = expense['category']
+        total = expense['amount'] * expense['quantity']
+        if category in category_totals:
+            category_totals[category] += total
+        else:
+            category_totals[category] = total
+#
+
+
+    print("Total amount spent by category:")
+    for category, total in category_totals.items():
+        print(f"  {category}: ${total:.2f}")
+
+#
+
+
+def list_all_expenses():
+    if not expenses:
+        print("No expenses recorded.")
+        return
+    
+    print("List of all expenses:")
+    for idx, expense in enumerate(expenses, start=1):
+        print(f"{idx}. Amount: ${expense['amount']:.2f}, Category: {expense['category']}, Date: {expense['date']}, Quantity: {expense['quantity']}")
+
+#
+
+
+
+# Usage
+
+while True:
+    print("\nExpense Tracker")
+    print("1. Add an expense")
+    print("2. Show total amount spent")
+    print("3. Show total amount spent by category")
+    print("4. List all expenses")
+    print("5. Exit")
+    
+    choice = input("Choose an option: ")
+    
+    if choice == '1':
+        add_expense()
+    elif choice == '2':
+        show_total_spent()
+    elif choice == '3':
+        show_total_by_category()
+    elif choice == '4':
+        list_all_expenses()
+    elif choice == '5':
+        break 
+        
+    else:
+        print("Invalid choice. Please select a valid option.")
+
+time.sleep(1)
+
+print("Thanks for using the Expense Tracker! :) ")
+
+time.sleep(3)
