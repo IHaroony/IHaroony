@@ -1,7 +1,7 @@
 - 👋 Hi, I’m @IHaroony
-- 👀 I’m interested in ... Software Development
-- 🌱 I’m currently learning ... Java,Python HTML
-- 💞️ I’m looking to collaborate on ...
+- 👀 I’m interested in ... Devops and Cloud
+- 🌱 I’m currently learning ... CI/CD ,Python Kubernetes
+- 💞️ I’m looking to collaborate on ... any devops related projects
 - 📫 How to reach me ... Email: haroon.younis00@gmail.com
 - ⚡ Fun fact: ... I Like sushi
 
